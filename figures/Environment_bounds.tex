@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+
+%Axis
+\draw[thick,->] (-1.5,0) -- (1.7,0) node[right] {$y$};
+\draw[thick,->] (0,-1.5) -- (0,1.7) node[above] {$x$};
+%\draw[step=.2cm, gray, very thin] (-1.5,-1.5) grid (1.5,1.5);
+
+%Perimeter
+\draw[thick] (-0.5, -1.1) rectangle (1, 1.2);
+
+%Limits
+\path (0, 1.2) node[xshift=4mm, yshift=2mm]{\small $x_{max}$};
+\path (0, -1.1) node[xshift=4mm, yshift=-2mm]{\small $x_{min}$};
+\path (1, 0) node[xshift=3mm, yshift=0mm, rotate=-90]{\small $y_{max}$};
+\path (-0.5, 0) node[xshift=-3mm, yshift=0mm, rotate=90]{\small $y_{min}$};
+
+%Limit Points
+\filldraw[red](-0.2, 1.2) circle(1.5pt);
+\filldraw[red](0.4, -1.1) circle(1.5pt);
+\filldraw[red](1, 0.6) circle(1.5pt);
+\filldraw[red](-0.5, 0.4) circle(1.5pt);
+
+\end{tikzpicture}
+
+
+
+
+
+
